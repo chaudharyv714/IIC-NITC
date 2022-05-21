@@ -1,0 +1,111 @@
+#header {
+    display: flex;
+    flex-flow: column no-wrap;
+    align-items: center;
+}
+
+#header-logo {
+    flex-grow: 1;
+}
+
+#header-logo img {
+    height: 4em;
+}
+
+#header-list {
+    flex-grow: 9;
+}
+
+#header-list ul {
+    color:black;
+    height: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    margin: 0 1rem 0 18rem;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: transform 0.8s;
+}
+
+#header-list ul li:hover {
+    transform: translate(-10px, 10px);
+    font-size: 1.3em;
+    color: rgb(75, 73, 73);
+}
+
+.header-hamburger-off,
+.header-hamburger-on {
+    display: none;
+}
+
+.hamburger-bar1,
+.hamburger-bar2,
+.hamburger-bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.header-hamburger-on .hamburger-bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.header-hamburger-on .hamburger-bar2 {
+    opacity: 0;
+}
+
+.header-hamburger-on .hamburger-bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #header-logo {
+        flex-grow: 1;
+        display: flex;
+        width: 100vw;
+        padding: 0 1em;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    #header-list {
+        width: 100vw;
+        margin-top: 2em;
+    }
+
+    #header-list ul {
+        flex-direction: column;
+        margin: 0 1rem 0 1rem;
+        height: auto;
+        margin-bottom: 5em;
+    }
+
+    #header-list ul li {
+        padding-top: 1em;
+        font-size: 1.6em;
+
+    }
+
+    .header-hamburger-off,
+    .header-hamburger-on {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .header-mobile {
+        display: none
+    }
+}

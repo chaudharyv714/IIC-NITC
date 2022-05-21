@@ -1,0 +1,127 @@
+#footer a{
+    color:white;
+}
+#footer {
+    background-color: black;
+    color: cornsilk;
+    display: flex;
+    flex-flow: column wrap;
+}
+#footer #first {
+    flex: 10;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5rem 1rem;
+
+}
+
+#footer #first #log-box {
+    text-align: left;
+    padding-left: 2rem;
+}
+#footer #first #log-box img{
+    height: 5rem;
+}    
+
+#footer #first #follow {
+    flex: 1;
+    text-align: center;
+}
+
+#footer #first #call {
+    flex: 1;
+    text-align: left;
+}
+
+
+#footer #first #follow div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#footer #first #follow div a {
+    font-size: 2.5rem;
+}
+
+#footer #first #call img{
+    display: block;
+    margin: auto;
+}
+
+.footext {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.whitebr {
+    display: block;
+    width: 90vw;
+    margin: auto;
+    border-top: 1px solid wheat;
+}
+
+#footer #second {
+    flex: 4;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+}
+
+#footer #second #credits {
+    flex: 1;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+#footer #second #pptc {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+    #footer #first {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    #footer #first * {
+        margin-bottom: 1rem;
+    }
+
+    #footer #follow {
+        width: 100%;
+    }
+
+    #footer #second {
+        flex-flow: row wrap;
+        padding: 0;
+    }
+
+    #footer #second * {
+        text-align: center;
+    }
+
+    #credits {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        width: 100%;
+        display: inline;
+    }
+    #footer #second #pptc {
+        flex: 4;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+}
