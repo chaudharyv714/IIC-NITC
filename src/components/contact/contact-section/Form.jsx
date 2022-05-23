@@ -45,7 +45,7 @@ const Form = () => (
         )}
       </label>
     ))}
-    <button className='form-submit'>submit</button>
+    <button className='form-submit'>Ping</button>
 
     
   </form>
