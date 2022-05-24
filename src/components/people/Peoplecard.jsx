@@ -1,5 +1,3 @@
-import React, { useState } from "react"
-import ReactDom from "react-dom"
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -8,11 +6,15 @@ import { CardActionArea } from '@mui/material';
 import staffdata from "./data/staffdata";
 import studentdata from "./data/studentdata";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
+
 const customstyle = {
-    display: "inline-flex", margin: "10px", textAlign: "center",
+    display: "inline-flex",justifyContent:"center",paddingTop:"1em", margin: "10px", textAlign: "center",
     boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
     position: "relative",
 }
+
+
 function App(props) {
     var data;
     if (props.type === "staff")

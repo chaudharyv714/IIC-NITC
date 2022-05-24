@@ -5,7 +5,7 @@
   
   @media screen and (min-width: 799px) {
     .contact-section {
-      --offset-height: -100px;
+      --offset-height: -40px;
   
       display: grid;
       grid-template-columns: 3fr 1.5fr;

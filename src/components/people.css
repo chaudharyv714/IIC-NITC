@@ -1,0 +1,36 @@
+#people {
+    padding:2em;
+}
+#people span{
+    display: flex;
+    flex-direction: row;
+    font-size: 2em;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#people h2{
+    margin-left: 2em;
+}
+
+#student-members,
+#staff-members {
+    margin: auto 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+    #people {
+        padding:0em;
+        margin-bottom: 2em;
+    }
+    #people h2{
+        margin-left: 0.5em;
+    }
+    #student-members,
+    #staff-members {
+        margin: 0 0.5em;
+        flex-direction: column;
+    }
+}

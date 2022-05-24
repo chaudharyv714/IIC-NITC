@@ -1,0 +1,81 @@
+:root {
+    --col1: #2f2fa2;
+    --col2: white;
+}
+
+.bg {
+    background-color: var(--col1);
+    padding: 10px;
+    color: white;
+    margin-right: 15px;
+}
+
+#about {
+    padding: 1rem;
+    margin: 2rem 1rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#about .con {
+    flex: 1;
+    padding: 2rem;
+}
+
+#about .con .content {
+    margin-bottom: 4em;
+}
+
+#about .con p {
+    padding-top: 1em;
+    padding-left: 2em;
+}
+#about .con ul {
+    padding-top: 1em;
+}
+#about .con .content span i,
+h3 {
+    display: inline;
+}
+
+#about .con .content span i {
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+
+#about .image {
+    flex: 1;
+}
+
+#about .image img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #about {
+        margin-top: 3rem;
+        flex-flow: column-reverse wrap;
+        margin: 0%;
+        padding: 0;
+    }
+
+    #about .con {
+        padding:5rem 0;
+    }
+
+
+    #about .content p,
+    ul {
+        padding-left: 01.5em;
+    }
+
+}

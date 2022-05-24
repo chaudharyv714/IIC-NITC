@@ -7,7 +7,7 @@ import './contact.css'
 
 function Contact() {
   return (
-    <div className="App">
+    <div id="contact">
       <IntroSection />
       <ContactSection />
       <FooterSection />

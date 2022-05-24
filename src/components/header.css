@@ -35,6 +35,10 @@
     font-size: 1.3em;
     color: rgb(75, 73, 73);
 }
+#header-list ul li a{
+    all: unset;
+    cursor:pointer;
+}
 
 .header-hamburger-off,
 .header-hamburger-on {

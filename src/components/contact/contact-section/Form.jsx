@@ -4,7 +4,12 @@ import React from 'react'
 import './form.css'
 
 const formInputs = [
-  { id: 'name', type: 'text', label: 'Your name', placeholder: 'enter your name' },
+  {
+    id: 'name',
+    type: 'text',
+    label: 'Your name',
+    placeholder: 'Enter your name'
+  },
   {
     id: 'tel',
     type: 'tel',
@@ -21,7 +26,7 @@ const formInputs = [
     id: 'message',
     type: 'textarea',
     label: 'Your message',
-    placeholder: 'message',
+    placeholder: 'Message',
   },
 ]
 
@@ -40,14 +45,14 @@ const Form = () => (
             className="form-input"
             type={input.type}
             placeholder={input.placeholder}
-            
+
           />
         )}
       </label>
     ))}
-    <button className='form-submit'>Ping</button>
+    <button className='form-submit'>Ping Us</button>
 
-    
+
   </form>
 )
 

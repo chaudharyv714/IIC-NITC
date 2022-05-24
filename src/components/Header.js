@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import './header.css';
 
 function Header() {
-    const [classesName, updateclassesName] = useState(["header-hamburger-off","header-mobile"]);
+    const [classesName, updateclassesName] = useState(["header-hamburger-off", "header-mobile"]);
 
-  var callupdateclassesName = () => {
-    updateclassesName((prevclassesName) =>{ 
-    if(prevclassesName[0]=="header-hamburger-off")
-      return ["header-hamburger-on","header-pc"];
-      return ["header-hamburger-off","header-mobile"];
-    });
-  };
+    var callupdateclassesName = () => {
+        updateclassesName((prevclassesName) => {
+            if (prevclassesName[0] == "header-hamburger-off")
+                return ["header-hamburger-on", "header-pc"];
+            return ["header-hamburger-off", "header-mobile"];
+        });
+    };
 
     return (
         <div id="header">
@@ -26,12 +26,12 @@ function Header() {
 
             <div id="header-list" className={classesName[1]}>
                 <ul>
-                    <li><a>About Us</a></li>
-                    <li><a>Announcents</a></li>
-                    <li><a>Gallery</a></li>
-                    <li><a>Events</a></li>
-                    <li><a>People</a></li>
-                    <li><a>Contact Us</a></li>
+                    <li><a href="#about" >About Us</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#announcements">Announcements</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#people">People</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>

@@ -1,15 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Peoplecard from './Peoplecard';
+import Peoplecard from './people/Peoplecard';
+import './people.css';
 
 function People() {
     return (
-        <>
-            <h1>Students Members</h1>
-            <Peoplecard type="staff" />
-            <h1>Students Members</h1>
-            <Peoplecard type="student" />
-        </>
+        <div id="people">
+            <span>
+            <i className="bg fa-solid fa-people-group"></i>
+                <h3 id="team"> Our Team</h3>
+            </span>
+            <h2>Students Members</h2>
+            <div id="student-members">
+                <Peoplecard type="staff" />
+            </div>
+            <h2 className="mt-5">Students Members</h2>
+            <div id="staff-members">
+                <Peoplecard type="student" />
+            </div>
+
+        </div>
     );
 };
 

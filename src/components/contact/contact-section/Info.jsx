@@ -14,7 +14,7 @@ const Info = () => (
 
 
     <div className="info-details-container">
-      <h3>+91-1234567890</h3>
+      <h3>+91-1234567890</h3><br/>
       <h3>example@nitc.com</h3>
       <p>
       <h4>National Institute of Technology Calicut,</h4>

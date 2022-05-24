@@ -1,3 +1,17 @@
+#events {
+  margin: 2em;
+}
+
+#events span {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+}
+
+#events span i {
+  padding: 10px 15px;
+}
 .App {
   text-align: center;
 }
@@ -32,7 +46,17 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #events {
+    margin: 0;
+  }
+  #events .row{
+    margin:1em;
   }
 }

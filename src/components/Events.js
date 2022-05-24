@@ -3,19 +3,27 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../../node_modules/bootstrap/dist/js/bootstrap';
 import EventCard from './events/EventCard';
 import Announcements from './events/Announcements';
+import './events.css';
 
-function App() {
-  return (
-     <>
-        
-        <h1 className='text-center text-danger text-capitalize my-5'>Events</h1>
-        <EventCard/>
-        <h1 className='text-center text-danger text-capitalize my-5'>Annoucements</h1>
-        <Announcements/>
-     </>
+function Event() {
+   return (
+      <div id="events">
+         <span>
+         <i className="bg far fa-calendar"></i>
+         <p className='event-heading'>Events</p>
+         </span>
+
+         <EventCard />
+         <span className='mb-2'>
+         <i className="bg fas fa-stream"></i>
+            <p className='event-heading'>Annoucements</p>
+         </span>
+
+         <Announcements />
+      </div>
 
 
-  );
+   );
 }
 
-export default App;
+export default Event;
